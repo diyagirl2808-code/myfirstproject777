@@ -1,0 +1,50 @@
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+
+        /* Heading style */
+        h1 {
+            color: #c71585; /* dark pink */
+            font-size: 48px;
+            margin-bottom: 40px;
+        }
+
+        /* Input box style */
+        input {
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-right: 10px;
+        }
+
+        /* Button style */
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #c71585;  /* dark pink button */
+            color: white;               /* white text */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        /* Button hover effect */
+        button:hover {
+            background-color: #a0146d;  /* slightly darker pink on hover */
+        }
+    </style>
+</head>
+<body>
+
+<h1>Welcome to My App</h1>
+
+<form method="POST" action="/process">
+    <input type="text" name="data" placeholder="Type something">
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>

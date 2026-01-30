@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Cute App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h1>Welcome to My App</h1>
+
+<form method="POST" action="/">
+    <input type="text" name="data" placeholder="Type something">
+    <button type="submit">Submit</button>
+</form>
+
+{% if message %}
+    <p>{{ message }}</p>
+{% endif %}
+
+</body>
+</html>
